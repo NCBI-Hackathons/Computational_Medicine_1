@@ -39,9 +39,10 @@
 - python code used to filter results under the 23andme and ancestry categorical information. 
 - *opensnp (for gathering data from families with particular phenotypes)*
    + *allows for customers to view/share their phenotypes from a vast openSNP database.*
-   + *opensnp works by having customers upload their raw genotyping or exome data (from 23andMe, ancestry.com, FamilyTreeDNA)
+   + *opensnp works by having customers upload their raw genotyping or exome data (from 23andMe, ancestry.com, FamilyTreeDNA)*
    + *source citation: https://opensnp.org/*
    + *source code github documentation: https://github.com/openSNP/snpr*
+   + **_implementation of opensnp in our pipeline_**:
 - *import click* (a library with necessary software utilized in this pipeline)
 - *import json*
 - *import pdb*
