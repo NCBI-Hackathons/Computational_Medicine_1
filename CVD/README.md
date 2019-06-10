@@ -7,10 +7,14 @@
 
 
 ### software(s) used: 
-- *alternative (link to GWAS database)*, 
-- *ziptools (for unzipping the files)*, 
+- *alternative (link to GWAS database)*, (
+- *ziptools (for unzipping the files) (zipfile)*
 - python code used to filter results under the 23andme and ancestry categorical information. 
 - *opensnp*
+- *import click* (a library with necessary software utilized in this pipeline)
+- *import json*
+- *import pdb*
+- *import sys*
 
 
 
