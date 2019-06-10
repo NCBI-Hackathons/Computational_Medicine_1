@@ -5,7 +5,15 @@
 
 ## Pipeline overview
 
-The pipeline is divided into two parts: 1) genotype phasing and imputation, and 2) RNA-Seq analysis. The first part of the pipeline is quite complex; to make this project tractable for a two-day hackathon, we focus on the second part of the pipelihne and assume we have available finished VCFs from all trio members.
+The pipeline is divided into two parts: 1) genotype phasing and imputation, and 2) RNA-Seq analysis.
+
+### Phasing and imputation
+
+This part of the pipeline is quite complex and time-consuming. To make this project tractable for a two-day hackathon, we utilize the [1000 Genomes Phase 3 Release VCFs](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/).
+
+Parental origin of alleles in heterozygous SNVs are assigned using the [custom R script from Jadhav et al.](https://github.com/SharpLabMSSM/PofOAssignment).
+
+This part of the pipeline can be improved using [WhatsHap](https://whatshap.readthedocs.io/en/latest/) read-backed phasing and/or [phASER](https://github.com/secastel/phaser) for long-range variant phasing from the RNA-Seq data.
 
 ### RNA-Seq analysis pipeline steps
 
@@ -27,7 +35,3 @@ The pipeline is divided into two parts: 1) genotype phasing and imputation, and 
   * Overlap SegDups or simple repeats from UCSC
 * Assign SNVs to unique gene fragments (UGFs) and sum their read counts.
 * Apply statistical test (Wilcox, ShrinkBayes) to test for PoO-specific expression.
-
-### Notes on phasing and imputation
-
-Jadhav et al.'s pipeline can be improved using [WhatsHap](https://whatshap.readthedocs.io/en/latest/) read-backed phasing and/or [phASER](https://github.com/secastel/phaser) for long-range variant phasing from the RNA-Seq data.
