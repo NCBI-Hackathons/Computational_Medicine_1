@@ -6,7 +6,7 @@
 ### When multiple individuals in a family have acquired the same phenotypic trait from a disease they have been previously diagnosed with, the situation pursues a more efficient form of notifying interested individuals "protected" they are from inhabiting this phenotypic trait or how susceptible they are to it. This output from our pipeline is in the form of a penetrance estimate. 
 
 
-### software(s) used: alternative (link to GWAS database), ziptools (for unzipping the files), + python code used to filter results under the 23andme and ancestry categorical information.
+### software(s) used: *alternative (link to GWAS database)*, *ziptools (for unzipping the files)*, + python code used to filter results under the 23andme and ancestry categorical information. *opensnp*
 
 
 
