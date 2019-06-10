@@ -14,7 +14,7 @@
 
 
 ## Software Workflow Diagram:
-***Input:** penetrance estimate and snp chip data → 
+***Input:*** penetrance estimate and snp chip data → 
 
    processing of GWAS odds ratios → 
    3000 random snp collections from people without the phenotypic trait of the disease → 
