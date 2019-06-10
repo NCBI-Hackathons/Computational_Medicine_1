@@ -46,10 +46,12 @@
    + *source citation: https://opensnp.org/*
    + *source code github documentation: https://github.com/openSNP/snpr*
    + **_implementation of opensnp in our pipeline_**:
-- **import click**: (a library with necessary software utilized in this pipeline)
-- **import pdb**:
-- **import sys**:
-- **possibly dbsnip**???:
+- **modules imported in code**
+    +**import click**: a library with necessary software utilized in this pipeline
+    +**import json**: JSON handles data flow in a file by converting Python object(s) to respective JSON object files.
+    +**import pdb**:
+    +**import sys**:
+    +**possibly dbsnip**???:
 
 
 
