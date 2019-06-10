@@ -29,7 +29,7 @@
 
 
 
-## software(s) used: 
+## Software(s) used: 
 - **alternative**: (for gathering data from the gwas catalog database)
    + *source citation: https://www.ebi.ac.uk/gwas/docs/file-downloads*
    + *link to process the gwas catalog: https://www.ebi.ac.uk/gwas/api/search/downloads/alternative*
