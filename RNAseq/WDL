@@ -1,3 +1,16 @@
-task RNA-Seq
-    input
+workflow myworkflow {
+    call task_A
+    call task_B
+}
+
+task task_A {
+    command {do_stuff R=reference.fa I=input.bam O=variants.vcf}
+    output {}
+}
+
+task task_B {
+     command {}
+    output {}
+}
+
     
