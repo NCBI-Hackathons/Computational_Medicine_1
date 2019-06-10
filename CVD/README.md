@@ -9,7 +9,7 @@
 ### software(s) used: 
 - *alternative (link to GWAS database)*, 
 - *ziptools (for unzipping the files)*, 
-- + python code used to filter results under the 23andme and ancestry categorical information. 
+- python code used to filter results under the 23andme and ancestry categorical information. 
 - *opensnp*
 
 
