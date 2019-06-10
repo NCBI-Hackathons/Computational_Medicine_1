@@ -19,3 +19,4 @@
 - when evaulating SVs for a particular gene or disease, oftentimes a query will include large SVs that affect not only the gene of interest, but neighboring genes as well; determine a heuristic for deciding when an SV is too large to be causative of a particular phenotype because it is likely to not be specific for that phenotype
 
 
+[Presentation](https://docs.google.com/presentation/d/1PDyuDy2U_6lgLk14f3FX-EgKt2jBjbsCCEQ4whglQS0/edit?usp=sharing)
