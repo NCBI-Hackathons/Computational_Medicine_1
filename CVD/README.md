@@ -36,7 +36,8 @@
    + *This updated module provides tools to create, read, write, append and list a ZIP file.*
    + **_implemention of ziptools in our pipeline_**: 
    + *source citation: https://docs.python.org/3.7/library/zipfile.html*
-- python code used to filter results under the 23andme and ancestry categorical information. 
+- ''' diff 
+      + python code used to filter results under the 23andme and ancestry categorical information. '''
 - *opensnp*
 - *import click* (a library with necessary software utilized in this pipeline)
 - *import json*
