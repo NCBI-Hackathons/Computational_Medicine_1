@@ -8,6 +8,12 @@
 
 
 
+
+
+
+
+
+
 ## Software Workflow Diagram:
 ***Input:** penetrance estimate and snp chip data → 
 
@@ -15,6 +21,12 @@
    3000 random snp collections from people without the phenotypic trait of the disease → 
    
  **Output:** the polygenic score and how it compares to the 3000 random snp collections* 
+
+
+
+
+
+
 
 
 
