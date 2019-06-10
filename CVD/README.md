@@ -30,8 +30,10 @@
 
 
 ## software(s) used: 
-- *alternative (link to GWAS database)*, 
-- *ziptools (for unzipping the files) (zipfile)* (Python 3.7.3 documentation)
+- *alternative (for gathering data from the GWAS catalog database)*
+   + *source citation: https://www.ebi.ac.uk/gwas/docs/file-downloads*
+   + *link to process the gwas catalog: https://www.ebi.ac.uk/gwas/api/search/downloads/alternative*
+- *ziptools (for unzipping the files) (zipfile)* (Python 3.7.3 documentation)*
    + *The ZIP file format is a common archive and compresssion standard.*
    + *This updated module provides tools to create, read, write, append and list a ZIP file.*
    + **_implemention of ziptools in our pipeline_**: 
