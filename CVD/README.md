@@ -47,7 +47,6 @@
    + *source code github documentation: https://github.com/openSNP/snpr*
    + **_implementation of opensnp in our pipeline_**:
 - **import click**: (a library with necessary software utilized in this pipeline)
-- **import json**:
 - **import pdb**:
 - **import sys**:
 - **possibly dbsnip**???:
