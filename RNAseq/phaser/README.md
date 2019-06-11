@@ -1,5 +1,5 @@
 # Compound heterozygots within populations
-The project aims to look at compound heterozygots within populations. We used phASER to extract compound heterozygots from RNA-seq data. 
+The project aims to look at compound heterozygotes within populations. We used phASER to extract compound heterozygots from RNA-seq data. 
 
 Data:
 phASER uses two types of information genotype and expression. 
@@ -10,4 +10,4 @@ https://www.ebi.ac.uk/arrayexpress/experiments/E-GEUV-1/files/genotypes/
 RNA-seq:
 https://www.ebi.ac.uk/arrayexpress/experiments/E-GEUV-1/files/processed/
 
-We build a R package (https://github.com/vjcitn/BiocRnaHap) to inspect compound heterozygots from the haplotype.txt provided by phaser.  
+We build a R package (https://github.com/vjcitn/BiocRnaHap) to inspect compound heterozygotes from the haplotype.txt provided by phaser.  
