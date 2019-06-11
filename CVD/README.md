@@ -23,7 +23,7 @@ A model which can be used to predict an individual's Polygenic Risk Score (PRS) 
 
 
 ##  Significance of a Polygenic Risk Score:
-Assuming there is a family in which most individuals display a particular phenotypic trait derived from a specific disease diagnosis, the aim is to target the unresolved and provide those who are inquiring with a polygenic risk score which would demonstrate how well "protected" the individual(s) in question are from acquiring the phenotypic trait.
+Assuming there is a family in which most individuals display a particular phenotypic trait derived from a specific disease diagnosis, the aim is to target the unresolved and provide with a polygenic risk score which would demonstrate how well "protected" the individual(s) in question are from acquiring the phenotypic trait.
 
 
 ##   What's the problem and Why should we solve it?
