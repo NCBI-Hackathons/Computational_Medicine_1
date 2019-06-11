@@ -1,4 +1,4 @@
-#pathoGene
+# pathoGene
 
 ## What does it do?
 
