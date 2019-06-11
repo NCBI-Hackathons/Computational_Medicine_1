@@ -43,9 +43,9 @@ pathoGene Score:            +2 (some evidence for ‘Pathogenic’)
 
 Your query overlapped the following variants:
 
-Source    ID.           Location           % Overlap   Score Contribution   Reason
+Source    ID            Location           % Overlap   Score Contribution   Reason
 ----------------------------------------------------------------------------------------
-ClinVar   SCV0003454    14:76876-2787383     100%           +3              Likely path.
+ClinVar   SCV0003454    14:76876-2787383     100%           +3              Likely path
 gnomAD    gnomad_2_etc  14:236863-2763461     45%           -1              AF >0.01
 					
 Total Score = +2	
