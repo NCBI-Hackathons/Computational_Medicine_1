@@ -29,7 +29,7 @@ Assuming there is a family in which most individuals display a particular phenot
 
 
 ##   What's the problem and Why should we solve it?
-When multiple individuals in a family have acquired the same phenotypic trait from a disease they have been previously diagnosed with, the situation pursues a more efficient form of notifying interested individuals how protected they are from obtaining this phenotypic trait or how susceptible they are to it. This output from our pipeline is in the form of a penetrance estimate. 
+When multiple individuals in a family have acquired the same phenotypic trait from a disease they have been previously diagnosed with, the situation pursues a more efficient form of notifying interested individuals how protected they are from obtaining this phenotypic trait or how susceptible they are to it. Our pipeline focuses on [hypertrophic cardiomyopathy](https://www.heart.org/en/health-topics/cardiomyopathy/what-is-cardiomyopathy-in-adults/hypertrophic-cardiomyopathy) as the phenotypic trait in question and the output is in the form of a penetrance estimate. 
 
 
 
