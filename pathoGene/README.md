@@ -28,4 +28,6 @@ List of flags:
 HERE
 ```
 
+![Alt text](https://github.com/NCBI-Hackathons/Computational_Medicine_1/blob/master/pathoGene/pathoGene.jpg)
+
 ## You're awesome.  
