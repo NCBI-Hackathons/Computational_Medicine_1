@@ -1,2 +1,11 @@
 # Computational_Medicine_1
+
 Understanding how to index and use complex variants to more precisely categorize disease
+
+## Team 1: [Complex Variants, Penetrance and Disease](https://github.com/NCBI-Hackathons/Computational_Medicine_1/tree/master/CVD)
+
+## Team 2: [SNP-CNV interaction](https://github.com/NCBI-Hackathons/Computational_Medicine_1/tree/master/SV)
+
+## Team 3: [HaploRNAseq -- Population Defined RNAseq Dosage](https://github.com/NCBI-Hackathons/Computational_Medicine_1/tree/master/RNAseq)
+
+
