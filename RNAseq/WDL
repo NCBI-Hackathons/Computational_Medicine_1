@@ -27,9 +27,34 @@ task myTask {
 
 java -jar cromwell-42.jar run myworkflow_test.wdl
 
+==================================================
+
+workflow samtools {
+    call mysamtools
+    call myVCF
+    call mywhatshap
+}
+
+task mysamtools {
+    command {
+        samtools mpileup -f $1 $2 > ${PREFIX}.mpileup
+    }
+    output {
+        String out = read_string(stdout())
+    }
+
+task myVCF {
+    command {    
+java -jar tools/VarScan.v2.3.9.jar mpileup2snp ${PREFIX}.mpileup --output-vcf 1 > ${PREFIX}.vcf
+}
+
+task mywhatshap {
+    command {
+whatshap phase -o ${PREFIX}_phased.vcf ${PREFIX}.vcf $2
+}
 
 
-
+==========================================
 
 workflow myworkflow {
     call task_A
