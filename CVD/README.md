@@ -79,6 +79,9 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
     + **import** [sys](https://github.com/naidura/Computational_Medicine_1/edit/master/CVD/README.md): sets system-specific parameters and functions. 
 
 
+## Installation Options:
+We provide two options for installing: Docker or directly from Github
+
 
 
 
