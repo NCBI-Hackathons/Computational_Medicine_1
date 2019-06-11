@@ -26,12 +26,8 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
     - parsed for specific variants related to self reported cases of Hypertrophic Cardiomyopathy (HCM) using a filtered search using key-phrase "*cardiomyop.*" 
     - calculated filtered variants' minor allelic counts for each individual in the sample cohort. These measures were then used to populate a matrix, with variants as columns and individuals as rows.        
     
-  2. A filter was then applied in the allelic count matrix to variants which had a representation >30% and an Odds Ratio (OR) of association with a particular phenotype. This left 3 SNVs for representation of this phenotype after filtering. 
-
-*Given that there is likely more than 3 SNV that are contributing to this phenotype, we explored methods of predicting those variants and their genotypes.*
-
-  3. LDproxy from the LDlink package was then used to identify other variants that are in Linkage Disequilibrium (LD) with the SNVs and the genotypes for these variants were input into the sample set using the PRINCE algorithm (Vanunu et al 2010). 
-
+  2. A filter was then applied in the allelic count matrix to variants which had a Odds Ratio (OR) of association with a particular phenotype. 
+  
 *With the use of these approaches, we aim to prioritize genes in a genomic interval of interest according to their predicted strength-of-association with a given disease (in this case HCM).* 
 
   4. The genotypes were then used to fit a model which can be used to provide a polygenic risk score for an individual who may or may not be at risk for HCM. 
@@ -39,22 +35,18 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 *This can act as a tool to clinicians in the diagnosis and characterization of HCM. These methods can also be used to create models for other diseases which have a genetic cause and broaden the range of diseases we can assess through genotyping data.*
    
    
- **Output:** the polygenic score and how it compares to the 3000 random snp collections 
- 
+ **Output:** the polygenic score and a histogram of the population risk across the 2500+ samples of the 1000 Genomes Project.
 
 
 ## Dependencies: 
-- [Alternative](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative): for gathering data from the gwas catalog database.
-   + [source citation](https://www.ebi.ac.uk/gwas/docs/file-downloads)
-   
-- [Dbsnp](https://www.ncbi.nlm.nih.gov/snp/): A public-domain archive for human single nucleotide variations, microsatellites, and small-scale insertions and deletion. 
 
+ GWAS Catalog "All associations" file v1.0.2 from [https://www.ebi.ac.uk/gwas/api/search/downloads/alternative](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative) as provided by [https://www.ebi.ac.uk/gwas/docs/file-downloads](https://www.ebi.ac.uk/gwas/docs/file-downloads)
+ 
+1000 Genomes project as downloaded from ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/
 
-- **modules imported in code**
-    + **import** [json](https://docs.python.org/3/library/json.html): handles data flow in a file by converting Python object(s) to respective JSON object files.
-    + **import** [pdb](https://docs.python.org/3/library/pdb.html): interactive source code debugger for Python programs.
-    + **import** [sys](https://github.com/naidura/Computational_Medicine_1/edit/master/CVD/README.md): sets system-specific parameters and functions. 
+Python 3.5 (or later) https://www.python.org/
 
+R 3.5 (or later) https://www.r-project.org/ 
 
 
 **Citations:**
