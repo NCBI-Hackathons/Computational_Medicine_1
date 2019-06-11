@@ -1,3 +1,36 @@
+## Download Cromwell
+
+https://github.com/broadinstitute/cromwell/releases
+
+## 6/11/2019 current version == 42
+
+wget https://github.com/broadinstitute/cromwell/releases/download/42/cromwell-42.jar
+
+## Testable WDL script. Save as *.wdl file
+
+## Example: myworkflow_test.wdl
+
+workflow myWorkflow {
+    call myTask
+}
+
+task myTask {
+    command {
+        echo "hello world"
+    }
+    output {
+        String out = read_string(stdout())
+    }
+}
+
+## test script
+
+java -jar cromwell-42.jar run myworkflow_test.wdl
+
+
+
+
+
 workflow myworkflow {
     call task_A
     call task_B
