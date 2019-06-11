@@ -9,7 +9,7 @@
 ----
 
 
-# **NAME OF PIPELINE** -- A Template For Producing A Polygenic Risk Score For The Masses
+# **INSERT TEAM NAME** -- A Template For Producing A Polygenic Risk Score For The Masses
 
 #### *hackathon team:*
 
@@ -42,7 +42,7 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
    processing of GWAS odds ratios → 
    3000 random snp collections from people without display of hypertrophic cardiomyopathy →
    
- **Output:** the polygenic risk score and how it compares to the 3000 random snp collections* 
+ **Output:** the polygenic risk score and how it compares to the 3000 random snp collections
 
 
 
