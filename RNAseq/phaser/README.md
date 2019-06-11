@@ -1,5 +1,5 @@
-# phASER
-The project aims oto look at compound heterozygots within populations. We used phASER to extract compound heterozygots from RNA-seq data. 
+# Compound heterozygots within populations
+The project aims to look at compound heterozygots within populations. We used phASER to extract compound heterozygots from RNA-seq data. 
 
 Data:
 phASER uses two types of information genotype and expression. 
