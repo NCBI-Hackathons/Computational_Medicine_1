@@ -86,6 +86,7 @@ We provide two options for installing: Docker or directly from Github
 
 ### Installing from GitHub:
 
+## Additional Functionality:
 
 
 
