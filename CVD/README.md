@@ -60,9 +60,8 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 - [Docker](https://www.docker.com/): leading software container platform.
 
 
-- **python code used to filter results under the 23andme and ancestry categorical information.**
+
 - **modules imported in code**
-    + **import click**: a library with necessary software utilized in this pipeline
     + **import** [json](https://docs.python.org/3/library/json.html): JSON handles data flow in a file by converting Python object(s) to respective JSON object files.
     + **import** [pdb](https://docs.python.org/3/library/pdb.html): an interactive source code debugger for Python programs.
     + **import** [sys](https://github.com/naidura/Computational_Medicine_1/edit/master/CVD/README.md): sets system-specific parameters and functions. 
