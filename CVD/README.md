@@ -40,7 +40,7 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
    → obtain SNP's pertaining to cardiomyopathy →
    opening of SNP arrays →
    processing of GWAS odds ratios → 
-   3000 random snp collections from people without the phenotypic trait of the disease → 
+   3000 random snp collections from people without display of hypertrophic cardiomyopathy →
    
  **Output:** the polygenic risk score and how it compares to the 3000 random snp collections* 
 
