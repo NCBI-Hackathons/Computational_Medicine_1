@@ -68,11 +68,14 @@ workflow align_bam_wf {
   input {
     Array[File] bams
     File vcf
+    String? sample_id
     File index_tgz
     Int threads = 1
     Boolean? paired
     Int? read_len
   }
+
+  String output_prefix = select_first([sample_id, basename(vcf, ".vcf.gz")])
 
   if (!defined(read_len) || !defined(paired)) {
     call aselux.params_from_bam {
@@ -104,14 +107,26 @@ workflow align_bam_wf {
     Array[File] fq_gzs = single_bam_to_fastq.fq_gz
   }
 
+  if (defined(sample_id)) {
+    call align.filter_vcf {
+      input:
+        vcf=vcf,
+        sample_id=sample_id
+    }
+    File filtered_vcf = filter_vcf.vcf
+  }
+
+  File actual_vcf = select_first([filtered_vcf, vcf])
+
   call align.align_fq {
     input:
       fq_gzs=fq_gzs,
-      vcf=vcf,
+      vcf=actual_vcf,
       index_tgz=index_tgz,
       threads=threads,
       read_len=actual_read_len,
-      paired=actual_paired
+      paired=actual_paired,
+      output_prefix=output_prefix
   }
 
   output {

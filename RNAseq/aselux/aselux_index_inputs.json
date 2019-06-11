@@ -1,0 +1,4 @@
+{
+  "build_index_wf.reference_gz": "human_g1k_v37_fasta.gz",
+  "build_index_wf.gtf_gz": "gencode.v30lift37.annotation.gtf.gz"
+}

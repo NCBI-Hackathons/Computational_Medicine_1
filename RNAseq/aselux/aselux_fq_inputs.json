@@ -1,0 +1,7 @@
+{
+  "align_fq_wf.fq_gzs": [],
+  "align_fq_wf.vcf": "Imputed.Filter.95.SNPIdFixed.HWE0.0001.BiallelicSNPOnly.MendelianErrorFixed.PhaseSwitch.FillMiss.Offsprings165.vcf.gz",
+  "align_fq_wf.index_tgz": "human_g1k_v37_gencode.v30lift37.index.tgz",
+  "align_fq_wf.paired": true,
+  "threads": 8
+}

@@ -1,5 +1,26 @@
 version 1.0
 
+task filter_vcf {
+  input {
+    File vcf
+    String sample_id
+  }
+
+  String output_filename = basename(vcf, "vcf.gz") + "-filtered.vcf.gz"
+
+  command <<<
+  bcftools -a -s ~{sample_id} -U -e 'GT="ref"' -Oz -o ~{output_filename}
+  >>>
+
+  runtime {
+    docker: "compmed/samtools:latest"
+  }
+
+  output {
+    File filtered_vcf = "${output_filename}"
+  }
+}
+
 task align_fq {
   input {
     Array[File] fq_gzs
