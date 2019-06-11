@@ -34,11 +34,11 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 
 *Given that there is likely more than 3 SNV that are contributing to this phenotype, we explored methods of predicting those variants and their genotypes.*
 
-  3. LDproxy from the LDlink package was then used to identify other variants that are in Linkage Disequilibrium (LD) with the SNVs and the genotypes for these variants were inputs for the sample set using the PRINCE algorithm (Vanunu et al 2010). 
+  3. LDproxy from the LDlink package was then used to identify other variants that are in Linkage Disequilibrium (LD) with the SNVs and the genotypes for these variants were input into the sample set using the PRINCE algorithm (Vanunu et al 2010). 
 
 *With the use of these approaches, we aim to prioritize genes in a genomic interval of interest according to their predicted strength-of-association with a given disease (in this case HCM).* 
 
-  4. These genotypes inputs were then used to fit a model which can be used to provide a polygenic risk score for an individual who may or may not be at risk for HCM. 
+  4. The genotypes were then used to fit a model which can be used to provide a polygenic risk score for an individual who may or may not be at risk for HCM. 
   
 *This can act as a tool to clinicians in the diagnosis and characterization of HCM. These methods can also be used to create models for other diseases which have a genetic cause and broaden the range of diseases we can assess through genotyping data.*
    
