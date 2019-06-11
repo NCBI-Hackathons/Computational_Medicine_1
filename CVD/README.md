@@ -82,6 +82,9 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 ## Installation Options:
 We provide two options for installing: Docker or directly from Github
 
+### Docker:
+
+### Installing from GitHub:
 
 
 
