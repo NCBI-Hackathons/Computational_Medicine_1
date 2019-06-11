@@ -1,25 +1,21 @@
+# Workstream 1: Get All GWAS-Identified Variants Related to a Particular ClinVar Variant 
 
 
+## Pipeline overview
 
-## [Pipeline Overview](https://www.lucidchart.com/documents/edit/df51958b-9ec2-4a0f-8094-d7a3d794cebb/0?shared=true&)
-
-
+# Workstream 2: Build a Platform for Mathematical Analysis of These Variants
 
 
 ----
 
 
-# ArrowPRS -- A Template For Producing A Polygenic Risk Score For The Masses
+# **NAME OF PIPELINE** -- A Template For Producing A Polygenic Risk Score For The Masses
 
 #### *hackathon team:*
 
 #### *insert link to doi or citation*
 
 #### [Link to Presentation](https://docs.google.com/presentation/d/1QgcN_QEQccpOUKctkwVCtzaE_Z_UvFrr50JRNkq9eJc/edit#slide=id.g5971a2130c_0_17)
-
-#### *Objectives(s)*: 
-      + Workstream 1: Get All GWAS-Identified Variants Related to a Particular ClinVar Variant 
-      + Workstream 2: Build a Platform for Mathematical Analysis of These Variants
 
 
 
@@ -29,36 +25,24 @@ Assuming there is a family in which most individuals display a particular phenot
 
 
 ##   What's the problem and Why should we solve it?
-When multiple individuals in a family have acquired the same phenotypic trait from a disease they have been previously diagnosed with, the situation pursues a more efficient form of notifying interested individuals how protected they are from obtaining this phenotypic trait or how susceptible they are to it. Our pipeline focuses on [hypertrophic cardiomyopathy](https://www.heart.org/en/health-topics/cardiomyopathy/what-is-cardiomyopathy-in-adults/hypertrophic-cardiomyopathy) as the phenotypic trait in question and the output is in the form of a penetrance estimate. 
-
-
+When multiple individuals in a family have acquired the same phenotypic trait from a disease they have been previously diagnosed with, the situation pursues a more efficient form of notifying interested individuals how protected they are from obtaining this phenotypic trait or how susceptible they are to it. This output from our pipeline is in the form of a penetrance estimate. 
 
 
 ## Software Workflow Diagram:
-**Input:** *penetrance estimate and data from the gwas catalog* 
-
-   → obtain SNP's pertaining to cardiomyopathy →
-   opening of SNP arrays →
-   processing of GWAS odds ratios → 
-   3000 random snp collections from people without display of hypertrophic cardiomyopathy →
-   gather data, use R to compute the risk score
+**Input:** penetrance estimate and snp chip data → 
+   A collection of ~3000 voluntarily released genotype data from ancestry & 23&me services, with self reported phenotypes, was used to create a model which can provide a polygenic risk score associated with a particular disease. This data was first parsed for specific variants related to self reported cases of hypertrophic cardiomyopathy (HCM) using the presence of the key-phrase "cardiomyop" in the GWAS catalogue's GWAS studies as a filter. Next the filtered variants minor allelic counts for each individual in the sample cohort were calculated and used to populate a matrix, with variants as columns and individuals as rows. A filter was then applied to variants which have a representation more than 30% in the allelic count matrix, and an Odds Ratio (OR) of association with a the particular phenotype. This left 3 SNVs for represenation of this phenotype after filtering. Given that there is likely more than 3 SNV that are contributing to this phenotype, we explored methods of predicting those variants and their genotypes. The LDlink, LDproxy tool was then used to identify other variants that are in Linkage Disequilibrium (LD) with these three and the genotypes for these variants were imputed for the sample set using the PRINCE algorithm designed by Vanunu et al (2010). Such approaches aim to prioritize genes in a genomic interval of interest according to their predicted strength-of-association with a given disease, HCM. These imputed genotypes were then used to fit a model which can be used to provide a polygenic risk score for an individual who may or may not be at risk for HCM. This can act as a tool to clinicians in the diagnosis and characterization of HCM. These methods can be used to create models for other diseases which have a genetic cause and broaden the range of diseases we can assess through genotyping data.
    
- **Output:** *the polygenic risk score and how it compares to the 3000 random snp collections*
-
-
-
-
-
-
-
-
+   
+ **Output:** the polygenic score and how it compares to the 3000 random snp collections* 
+ 
+   A model which can be used to predict an individuals Polygenic Risk Score (PRS) for HCM using the results of a genotype array. 
 
 ## Dependencies: 
-- [GWAS catalog](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative): for gathering data from the gwas catalog database.
+- [Alternative](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative): for gathering data from the gwas catalog database.
    + [source citation](https://www.ebi.ac.uk/gwas/docs/file-downloads)
    + **_implementation of alternative gwas catalog database_**:
 - [Ziptools](https://docs.python.org/3.7/library/zipfile.html): for unzipping zipfile file types.
-   + *Python 3.7.3 documentation*
+   + *Python 3.5.3 documentation*
    + *The ZIP file format is a common archive and compresssion standard.*
    + *This updated module provides tools to create, read, write, append and list a ZIP file.* 
    + **_implementation of ziptools in our pipeline_**:
@@ -81,18 +65,11 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
     + **import** [sys](https://github.com/naidura/Computational_Medicine_1/edit/master/CVD/README.md): sets system-specific parameters and functions. 
 
 
-## Installation Options:
-We provide two options for installing: Docker or directly from Github
 
-### Docker:
+Citations: 
 
-### Installing from GitHub:
+Vanunu O, Magger O, Ruppin E, Shlomi T, Sharan R. Associating genes and protein complexes with disease via network propagation. PLoS Comput Biol. 2010;6(1):e1000641
 
-## Additional Functionality:
-
-
-
-#### This project was part of the [NCBI Computational Medicine in the Cloud Hackathon.](https://biohackathons.github.io/index.html)
 
 
 
