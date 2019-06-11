@@ -26,7 +26,7 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 **Input:** penetrance estimate and snp chip data 
   1. A collection of ~3000 voluntarily released genotype data from [Ancestry.com](https://www.ancestry.com/) & [23&Me](https://www.23andme.com/?mygf=true) services with self reported phenotypes
   + This data was:
-    - parsed for specific variants related to self reported cases of hypertrophic cardiomyopathy (HCM) using a filtered search using key-phrase "*cardiomyop*". 
+    - parsed for specific variants related to self reported cases of hypertrophic cardiomyopathy (HCM) using a filtered search using key-phrase "*cardiomyop.*" 
     - calculated filtered variants' minor allelic counts for each individual in the sample cohort. These measures were then used to populate a matrix, with variants as columns and individuals as rows. 
            
            
