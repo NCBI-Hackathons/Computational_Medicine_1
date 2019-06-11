@@ -21,7 +21,7 @@
 
 
 ##  Significance of a Polygenic Risk Score:
-Assuming there is a family in which most individuals display a particular phenotypic trait derived from a specific disease diagnosis. The aim is to target the unresolved and provide those who are inquiring with a polygenic risk score which would demonstrate how well "protected" the individual(s) in question are from acquiring the phenotypic trait.
+Assuming there is a family in which most individuals display a particular phenotypic trait derived from a specific disease diagnosis. The aim is to target those individuals who have not presented with the disease and where SNP chip data are available to assess if the individual may be protected or at increased risk due to variants previously determined to influence presentation (GWAS).
 
 
 ##   What's the problem and Why should we solve it?
