@@ -8,27 +8,23 @@
 #### [Link to Presentation](https://docs.google.com/presentation/d/1QgcN_QEQccpOUKctkwVCtzaE_Z_UvFrr50JRNkq9eJc/edit#slide=id.g5971a2130c_0_17)
 
 ## What is **SNAPPY RISK?**
-A [model](https://www.lucidchart.com/invitations/accept/4f6b4edf-c7cd-4302-a349-bc40e1a4c9b2) which can be used to predict an individual's Polygenic Risk Score (PRS) for Hypertrophic Cardiomyopathy using the results of a genotype array.
-                           
-
-
-
+A [model](https://www.lucidchart.com/invitations/accept/4f6b4edf-c7cd-4302-a349-bc40e1a4c9b2) which can be used to predict an individual's Polygenic Risk Score (PRS) for Hypertrophic Cardiomyopathy using the results of a genotype array. It also includes the necessary code to extract data from public sources and prepare into into a format suitable for the PRS calculation.
 
 ##  Significance of a Polygenic Risk Score:
 Assuming there is a family in which most individuals display a particular phenotypic trait derived from a specific disease diagnosis, the aim is to target the unresolved and provide with a polygenic risk score which would demonstrate how well "protected" the individual(s) in question are from acquiring the phenotypic trait.
 
 
-##   What's the problem and Why should we solve it?
+##   What's the problem and why should we solve it?
 When multiple individuals in a family have acquired the same phenotypic trait from a disease they have been previously diagnosed with, the situation pursues a more efficient form of notifying interested individuals how protected they are from obtaining this phenotypic trait or how susceptible they are to it. The output is in the form of a penetrance estimate. 
 
 
 ## Software Workflow Diagram:
 **Input:** penetrance estimate and snp chip data 
-  1. A collection of ~3000 voluntarily released genotype data from [Ancestry.com](https://www.ancestry.com/) & [23&Me](https://www.23andme.com/?mygf=true) services with self reported phenotypes.
-  + This data was:
+  1. 2500 samples from the https://en.wikipedia.org/wiki/1000_Genomes_Project acquired from ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/
+  2. the GWAS Catalog from https://www.ebi.ac.uk/gwas/
+  + The gwas catalog was:
     - parsed for specific variants related to self reported cases of Hypertrophic Cardiomyopathy (HCM) using a filtered search using key-phrase "*cardiomyop.*" 
     - calculated filtered variants' minor allelic counts for each individual in the sample cohort. These measures were then used to populate a matrix, with variants as columns and individuals as rows.        
-    
     
   2. A filter was then applied in the allelic count matrix to variants which had a representation >30% and an Odds Ratio (OR) of association with a particular phenotype. This left 3 SNVs for representation of this phenotype after filtering. 
 
