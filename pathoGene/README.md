@@ -17,10 +17,15 @@ It outputs a report that contains
 
 ```
 List of flags:
-* parser = argparse.ArgumentParser(description = "Searches selected databases against a specified pathogenic variant")
-* parser.add_argument("-p", "--position", help="Position formatted as chrom:start_pos:end_pos")
-* parser.add_argument("-m", "--match_type", choices=["exact", "left", "right", "both", "any"], help="Type of match: left extended (left), right extended (right), both sides extended (both) any overlap (any), exact location match (exact).")
-* parser.add_argument("-d", "--distance", type=int help="Extend distance for any applicable match type")
+* "-p", "--position", help="Position formatted as chrom:start_pos:end_pos"
+* "-m", "--match_type", choices=["exact", "left", "right", "both", "any"], help="Type of match: left extended (left), right extended (right), both sides extended (both) any overlap (any), exact location match (exact)."
+* "-d", "--distance", type=int help="Extend distance for any applicable match type"
+```
+
+## Example line of code
+
+```
+HERE
 ```
 
 ## You're awesome.  
