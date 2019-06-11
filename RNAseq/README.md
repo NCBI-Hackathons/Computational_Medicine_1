@@ -13,10 +13,17 @@ This part of the pipeline is quite complex and time-consuming. To make this proj
 
 Parental origin of alleles in heterozygous SNVs are assigned using the [custom R script from Jadhav et al.](https://github.com/SharpLabMSSM/PofOAssignment).
 
-This part of the pipeline can be improved using [WhatsHap](https://whatshap.readthedocs.io/en/latest/) read-backed phasing and/or [phASER](https://github.com/secastel/phaser) for long-range variant phasing from the RNA-Seq data.
+#### Workstream 0 (optional): This part of the pipeline can be prepended by [WhatsHap](https://whatshap.readthedocs.io/en/latest/) read-backed phasing and/or [phASER](https://github.com/secastel/phaser) for long-range variant phasing from the RNA-Seq data.  
+
+``` 
+Scripts for Workstream 0:
+* https://github.com/NCBI-Hackathons/Computational_Medicine_1/blob/master/RNAseq/whatshap.sh
+* <phASER script>
+```
 
 ### RNA-Seq analysis
 
+```
 * QC (FastQC)
 * Trimming - they use Trimmomatic, Cutadapt, or Sickle; we can use Atropos
   * Remove adapters and other over-repesented sequences
@@ -35,3 +42,6 @@ This part of the pipeline can be improved using [WhatsHap](https://whatshap.read
   * Overlap SegDups or simple repeats from UCSC
 * Assign SNVs to unique gene fragments (UGFs) and sum their read counts.
 * Apply statistical test (Wilcox, ShrinkBayes) to test for PoO-specific expression.
+```
+
+### We're awesome!

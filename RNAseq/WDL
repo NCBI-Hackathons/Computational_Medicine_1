@@ -25,11 +25,50 @@ task myTask {
 
 ## test script
 
-java -jar cromwell-42.jar run myworkflow_test.wdl
+java -jar cromwell-42.jar run myworkflow_test.wdl 
+
+==================================================
+
+version 1.0
+workflow samtoolsVCFwhatshap {
+    call mysamtools
+    
+}
+
+task mysamtools {
+
+    input {
+        File genome
+        File bam
+    }
+
+    command {
+        bash whatshap.sh ${genome} ${bam}
+    }
+    output {
+        String out = read_string(stdout())
+    }
+}
+
+## to run wdl file:
+
+java -jar cromwell-42.jar run samtoolsVCFwhatshap.wdl --input samtoolsVCFwhatshap_inputs.json
+
+## Generating the template JSON
+
+## To generate the template of inputs for your WDL script, simply call the wdltool inputs function on your script:
+
+java -jar womtool-42.jar inputs samtoolsVCFwhatshap.wdl > samtoolsVCFwhatshap_inputs.json
+
+## This will create a file called myWorkflow_inputs.json that lists all the inputs to all the tasks in your script following the pattern below:
+
+{
+    "<workflow name>.<task name>.<variable name>": "<variable type>"
+}
 
 
-
-
+==========================================
+Example code structure
 
 workflow myworkflow {
     call task_A
