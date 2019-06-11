@@ -29,6 +29,7 @@ java -jar cromwell-42.jar run myworkflow_test.wdl
 
 ==================================================
 
+version 1.0
 workflow samtoolsVCFwhatshap {
     call mysamtools
     
