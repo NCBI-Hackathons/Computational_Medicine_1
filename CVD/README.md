@@ -30,10 +30,10 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 
 ## Software Workflow Diagram:
 **Input:** penetrance estimate and snp chip data 
-  + → A collection of ~3000 voluntarily released genotype data from [Ancestry.com](https://www.ancestry.com/) & [23&Me](https://www.23andme.com/?mygf=true) services with self reported phenotypes
-           This data was:
-           + → parsed for specific variants related to self reported cases of hypertrophic cardiomyopathy (HCM) using a filtered search using key-phrase "*cardiomyop*". 
-           + → calculated filtered variants' minor allelic counts for each individual in the sample cohort. These measures were then used to populate a matrix, with variants as columns and individuals as rows. 
+  1. A collection of ~3000 voluntarily released genotype data from [Ancestry.com](https://www.ancestry.com/) & [23&Me](https://www.23andme.com/?mygf=true) services with self reported phenotypes
+  + This data was:
+    - parsed for specific variants related to self reported cases of hypertrophic cardiomyopathy (HCM) using a filtered search using key-phrase "*cardiomyop*". 
+    - calculated filtered variants' minor allelic counts for each individual in the sample cohort. These measures were then used to populate a matrix, with variants as columns and individuals as rows. 
            
            
 A filter was then applied to variants which have a representation more than 30% in the allelic count matrix, and an Odds Ratio (OR) of association with a the particular phenotype. This left 3 SNVs for represenation of this phenotype after filtering. Given that there is likely more than 3 SNV that are contributing to this phenotype, we explored methods of predicting those variants and their genotypes. The LDlink, LDproxy tool was then used to identify other variants that are in Linkage Disequilibrium (LD) with these three and the genotypes for these variants were imputed for the sample set using the PRINCE algorithm designed by Vanunu et al (2010). Such approaches aim to prioritize genes in a genomic interval of interest according to their predicted strength-of-association with a given disease, HCM. These imputed genotypes were then used to fit a model which can be used to provide a polygenic risk score for an individual who may or may not be at risk for HCM. This can act as a tool to clinicians in the diagnosis and characterization of HCM. These methods can be used to create models for other diseases which have a genetic cause and broaden the range of diseases we can assess through genotyping data.
