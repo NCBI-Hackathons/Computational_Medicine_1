@@ -62,8 +62,8 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 
 
 - **modules imported in code**
-    + **import** [json](https://docs.python.org/3/library/json.html): JSON handles data flow in a file by converting Python object(s) to respective JSON object files.
-    + **import** [pdb](https://docs.python.org/3/library/pdb.html): an interactive source code debugger for Python programs.
+    + **import** [json](https://docs.python.org/3/library/json.html): handles data flow in a file by converting Python object(s) to respective JSON object files.
+    + **import** [pdb](https://docs.python.org/3/library/pdb.html): interactive source code debugger for Python programs.
     + **import** [sys](https://github.com/naidura/Computational_Medicine_1/edit/master/CVD/README.md): sets system-specific parameters and functions. 
 
 
