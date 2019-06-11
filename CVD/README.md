@@ -24,7 +24,7 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 
 ## Software Workflow Diagram:
 **Input:** penetrance estimate and snp chip data 
-  1. A collection of ~3000 voluntarily released genotype data from [Ancestry.com](https://www.ancestry.com/) & [23&Me](https://www.23andme.com/?mygf=true) services with self reported phenotypes
+  1. A collection of ~3000 voluntarily released genotype data from [Ancestry.com](https://www.ancestry.com/) & [23&Me](https://www.23andme.com/?mygf=true) services with self reported phenotypes.
   + This data was:
     - parsed for specific variants related to self reported cases of Hypertrophic Cardiomyopathy (HCM) using a filtered search using key-phrase "*cardiomyop.*" 
     - calculated filtered variants' minor allelic counts for each individual in the sample cohort. These measures were then used to populate a matrix, with variants as columns and individuals as rows. 
@@ -32,11 +32,11 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
            
   2. A filter was then applied in the allelic count matrix to variants which had a representation >30% and an Odds Ratio (OR) of association with a particular phenotype. This left 3 SNVs for representation of this phenotype after filtering. 
 
-Given that there is likely more than 3 SNV that are contributing to this phenotype, we explored methods of predicting those variants and their genotypes.
+*Given that there is likely more than 3 SNV that are contributing to this phenotype, we explored methods of predicting those variants and their genotypes.*
 
   3. LDproxy from the LDlink package was then used to identify other variants that are in Linkage Disequilibrium (LD) with the SNVs and the genotypes for these variants were inputs for the sample set using the PRINCE algorithm (Vanunu et al 2010). 
 
-With the use of these approaches, we aim to prioritize genes in a genomic interval of interest according to their predicted strength-of-association with a given disease (in this case HCM). 
+*With the use of these approaches, we aim to prioritize genes in a genomic interval of interest according to their predicted strength-of-association with a given disease (in this case HCM).* 
 
   4. These genotypes inputs were then used to fit a model which can be used to provide a polygenic risk score for an individual who may or may not be at risk for HCM. 
   
