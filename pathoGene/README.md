@@ -18,7 +18,7 @@ It outputs a report that contains
 ```
 List of flags:
 * "-p", "--position", help="Position formatted as chrom:start_pos:end_pos"
-* "-m", "--match_type", choices=["exact", "left", "right", "both", "any"], help="Type of match: left extended (left), right extended (right), both sides extended (both) any overlap (any), exact location match (exact)."
+* "-m", "--match_type", choices=["exact", "left", "right", "within", "any"], help="Type of match: left extended (left), right extended (right), both sides extended (both) any overlap (any), exact location match (exact)."
 * "-d", "--distance", type=int help="Extend distance for any applicable match type"
 ```
 
