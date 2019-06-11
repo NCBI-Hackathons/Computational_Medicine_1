@@ -54,7 +54,7 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 
 
 ## Dependencies: 
-- [Alternative](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative): for gathering data from the gwas catalog database.
+- [GWAS catalog](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative): for gathering data from the gwas catalog database.
    + [source citation](https://www.ebi.ac.uk/gwas/docs/file-downloads)
    + **_implementation of alternative gwas catalog database_**:
 - [Ziptools](https://docs.python.org/3.7/library/zipfile.html): for unzipping zipfile file types.
