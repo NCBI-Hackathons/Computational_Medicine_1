@@ -34,15 +34,10 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 
 
 
-
-
-
-
-
 ## Software Workflow Diagram:
-**Input:** penetrance estimate and data from the gwas catalog → 
+**Input:** penetrance estimate and data from the gwas catalog  
 
-   obtain SNP's pertaining to cardiomyopathy →
+   → obtain SNP's pertaining to cardiomyopathy →
    opening of SNP arrays →
    processing of GWAS odds ratios → 
    3000 random snp collections from people without the phenotypic trait of the disease → 
