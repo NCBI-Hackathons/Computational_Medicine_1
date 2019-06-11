@@ -8,8 +8,9 @@
 #### [Link to Presentation](https://docs.google.com/presentation/d/1QgcN_QEQccpOUKctkwVCtzaE_Z_UvFrr50JRNkq9eJc/edit#slide=id.g5971a2130c_0_17)
 
 ## What is **NAME OF PIPELINE?**
+                           Model Overview
 A model which can be used to predict an individual's Polygenic Risk Score (PRS) for Hypertrophic Cardiomyopathy using the results of a genotype array
-   ..+ Model Overview
+                           
 
 
 
