@@ -94,7 +94,7 @@ We provide two options for installing: Docker or directly from Github
 
 
 
-#### This project was part of the NCBI-Computational Medicine in the Cloud Hackathon
+#### This project was part of the [NCBI-Computational Medicine in the Cloud Hackathon.](https://biohackathons.github.io/index.html)
 
 
 
