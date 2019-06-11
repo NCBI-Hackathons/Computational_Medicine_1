@@ -2,7 +2,7 @@
 
 ## What does it do?
 
-##### This tool allows a user to take the coordinate of a structural variant (SV) and compare it to SVs in ClinVar and gnomAD!  Once there are matches identified, a pathogenicity score is calculated based on ClinVar assertions and gnomAD frequencies!  
+##### This tool allows a user to take the coordinate of a structural variant (SV) and compare it to SVs in ClinVar and GNOMAD!  Once there are matches identified, a pathogenicity score is calculated based on ClinVar assertions and GNOMAD frequencies!  
 
 ``` 
 It outputs a report that contains 
@@ -30,4 +30,8 @@ HERE
 
 ![Alt text](https://github.com/NCBI-Hackathons/Computational_Medicine_1/blob/master/pathoGene/pathoGene.jpg)
 
-## You're awesome.  
+## You're awesome.
+
+## Example Output
+
+
