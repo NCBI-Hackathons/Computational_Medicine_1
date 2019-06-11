@@ -43,7 +43,7 @@ https://github.com/NCBI-Hackathons/Computational_Medicine_1/blob/master/CVD/indr
 
  GWAS Catalog "All associations" file v1.0.2 from [https://www.ebi.ac.uk/gwas/api/search/downloads/alternative](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative) as provided by [https://www.ebi.ac.uk/gwas/docs/file-downloads](https://www.ebi.ac.uk/gwas/docs/file-downloads)
  
-1000 Genomes project as downloaded from ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/
+1000 Genomes project as downloaded from [ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/)
 
 Python 3.5 (or later) https://www.python.org/
 
@@ -55,9 +55,3 @@ R 3.5 (or later) https://www.r-project.org/
 Machiela MJ, Chanock SJ. LDlink a web-based application for exploring population-specific haplotype structure and linking correlated alleles of possible functional variants. Bioinformatics. 2015 Jul 2. PMID: 26139635. 
 
 Vanunu O, Magger O, Ruppin E, Shlomi T, Sharan R. Associating genes and protein complexes with disease via network propagation. PLoS Comput Biol. 2010;6(1):e1000641
-
-
-
-
-
-
