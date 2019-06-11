@@ -35,12 +35,11 @@ task align_fq {
   command <<<
   mkdir index
   tar -C index -xzf ~{index_tgz}
-  ASElux align --fq \
+  ASElux align --fq --seqFiles ~{sep=" " fq_gzs} \
     ~{if paired then "--pe" else "--se"} \
     --readLen ~{read_len} \
     --index index/~{basename(index_tgz, ".index.tgz")} \
     --vcf ~{vcf} \
-    --seqFiles ~{sep=" " fq_gzs} \
     --nthread ~{threads} \
     --out ~{output_prefix}
   >>>
