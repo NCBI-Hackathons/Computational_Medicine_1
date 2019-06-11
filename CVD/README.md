@@ -37,6 +37,7 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
    
  **Output:** the polygenic score and a histogram of the population risk across the 2500+ samples of the 1000 Genomes Project.
 
+https://github.com/NCBI-Hackathons/Computational_Medicine_1/blob/master/CVD/indrisk_dist.pdf
 
 ## Dependencies: 
 
