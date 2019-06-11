@@ -47,28 +47,13 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
 - [Alternative](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative): for gathering data from the gwas catalog database.
    + [source citation](https://www.ebi.ac.uk/gwas/docs/file-downloads)
    
-- [Ziptools](https://docs.python.org/3.7/library/zipfile.html): for unzipping zipfile file types.
-   + *Python 3.5.3 documentation*
-   + *The ZIP file format is a common archive and compresssion standard.*
-   + *This updated module provides tools to create, read, write, append and list a ZIP file.* 
-   
-- [Opensnp](https://opensnp.org/): for gathering data from families with particular phenotypes.
-   + *allows for customers to view/share their phenotypes from a vast openSNP database.*
-   + *opensnp works by having customers upload their raw genotyping or exome data (from 23andMe, ancestry.com, FamilyTreeDNA)*
-   + [github documentation](https://github.com/openSNP/snpr)
-   
-   
 - [Dbsnp](https://www.ncbi.nlm.nih.gov/snp/): A public-domain archive for human single nucleotide variations, microsatellites, and small-scale insertions and deletion. 
-
-- [Docker](https://www.docker.com/): leading software container platform.
-
 
 
 - **modules imported in code**
     + **import** [json](https://docs.python.org/3/library/json.html): handles data flow in a file by converting Python object(s) to respective JSON object files.
     + **import** [pdb](https://docs.python.org/3/library/pdb.html): interactive source code debugger for Python programs.
     + **import** [sys](https://github.com/naidura/Computational_Medicine_1/edit/master/CVD/README.md): sets system-specific parameters and functions. 
-
 
 
 
