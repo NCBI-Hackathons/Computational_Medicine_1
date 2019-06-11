@@ -9,7 +9,7 @@
 ----
 
 
-# **INSERT TEAM NAME** -- A Template For Producing A Polygenic Risk Score For The Masses
+# ArrowPRS -- A Template For Producing A Polygenic Risk Score For The Masses
 
 #### *hackathon team:*
 
