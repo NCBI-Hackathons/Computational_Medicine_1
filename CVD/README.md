@@ -17,6 +17,10 @@
 
 #### [Link to Presentation](https://docs.google.com/presentation/d/1QgcN_QEQccpOUKctkwVCtzaE_Z_UvFrr50JRNkq9eJc/edit#slide=id.g5971a2130c_0_17)
 
+#### *Objectives(s)*: 
+      + Get All GWAS-Identified Variants Related to a Particular ClinVar Variant 
+      + Build a Platform for Mathematical Analysis of These Variants
+
 
 
 
