@@ -22,7 +22,7 @@ List of flags:
 * "-d", "--distance", type=int help="Extend distance for any applicable match type"
 ```
 
-## Example line of code
+## Example Input
 
 ```
 HERE
