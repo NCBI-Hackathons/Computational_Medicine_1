@@ -1,7 +1,7 @@
 
 
 
-## Pipeline overview
+## Model overview
 
 
 
@@ -17,6 +17,8 @@
 
 #### [Link to Presentation](https://docs.google.com/presentation/d/1QgcN_QEQccpOUKctkwVCtzaE_Z_UvFrr50JRNkq9eJc/edit#slide=id.g5971a2130c_0_17)
 
+## What is **NAME OF PIPELINE?**
+A model which can be used to predict an individuals Polygenic Risk Score (PRS) for Hypertrophic Cardiomyopathy using the results of a genotype array.
 
 
 
@@ -42,9 +44,9 @@ When multiple individuals in a family have acquired the same phenotypic trait fr
   Given that there is likely more than 3 SNV that are contributing to this phenotype, we explored methods of predicting those variants and their genotypes. The LDlink, LDproxy tool was then used to identify other variants that are in Linkage Disequilibrium (LD) with these three and the genotypes for these variants were imputed for the sample set using the PRINCE algorithm designed by Vanunu et al (2010). Such approaches aim to prioritize genes in a genomic interval of interest according to their predicted strength-of-association with a given disease, HCM. These imputed genotypes were then used to fit a model which can be used to provide a polygenic risk score for an individual who may or may not be at risk for HCM. This can act as a tool to clinicians in the diagnosis and characterization of HCM. These methods can be used to create models for other diseases which have a genetic cause and broaden the range of diseases we can assess through genotyping data.
    
    
- **Output:** the polygenic score and how it compares to the 3000 random snp collections* 
+ **Output:** the polygenic score and how it compares to the 3000 random snp collections 
  
-   A model which can be used to predict an individuals Polygenic Risk Score (PRS) for HCM using the results of a genotype array. 
+
 
 ## Dependencies: 
 - [Alternative](https://www.ebi.ac.uk/gwas/api/search/downloads/alternative): for gathering data from the gwas catalog database.
