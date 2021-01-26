@@ -1,3 +1,60 @@
+# **NAME OF PIPELINE** -- A Template For Producing A Polygenic Risk Score For The Masses
+#### *insert link to doi or citation*
+##  Significance of a Polygenic Risk Score:
+### Assuming there is a family in which most individuals display a particular phenotypic trait derived from a specific disease diagnosis (**add any specifications of which disease(s) we will be focusing on**), our pipeline aims to target the unresolved and provide those who are inquiring with a polygenic risk score which would demonstrate how well "protected" the individual(s) in question are from acquiring the phenotypic trait.
+
+
+##   What's the problem and Why should we solve it?
+### When multiple individuals in a family have acquired the same phenotypic trait from a disease they have been previously diagnosed with, the situation pursues a more efficient form of notifying interested individuals "protected" they are from inhabiting this phenotypic trait or how susceptible they are to it. This output from our pipeline is in the form of a penetrance estimate. 
+
+
+
+
+
+
+
+## Software Workflow Diagram:
+**Input:** penetrance estimate and snp chip data → 
+
+   processing of GWAS odds ratios → 
+   3000 random snp collections from people without the phenotypic trait of the disease → 
+   
+ **Output:** the polygenic score and how it compares to the 3000 random snp collections* 
+
+
+
+
+
+
+
+
+
+## Software(s) used: 
+- **alternative**: (for gathering data from the gwas catalog database)
+   + *source citation: https://www.ebi.ac.uk/gwas/docs/file-downloads*
+   + *link to process the gwas catalog: https://www.ebi.ac.uk/gwas/api/search/downloads/alternative*
+   + **_implementation of alternative gwas catalog database_**:
+- **ziptools**: (for unzipping the files) (zipfile) (Python 3.7.3 documentation)
+   + *The ZIP file format is a common archive and compresssion standard.*
+   + *This updated module provides tools to create, read, write, append and list a ZIP file.* 
+   + *source citation: https://docs.python.org/3.7/library/zipfile.html*
+   + **_implemention of ziptools in our pipeline_**:
+- **python code used to filter results under the 23andme and ancestry categorical information.**
+- **opensnp**: (for gathering data from families with particular phenotypes)
+   + *allows for customers to view/share their phenotypes from a vast openSNP database.*
+   + *opensnp works by having customers upload their raw genotyping or exome data (from 23andMe, ancestry.com, FamilyTreeDNA)*
+   + *source citation: https://opensnp.org/*
+   + *source code github documentation: https://github.com/openSNP/snpr*
+   + **_implementation of opensnp in our pipeline_**:
+- **modules imported in code**
+    +**import click**: a library with necessary software utilized in this pipeline
+    +**import json**: JSON handles data flow in a file by converting Python object(s) to respective JSON object files.
+    +**import pdb**:
+    +**import sys**:
+    +**possibly dbsnip**???:
+
+
+
 
 # **SNAPPY RISK** -- A Template For Producing A Polygenic Risk Score For The Masses
 
